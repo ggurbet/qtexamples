@@ -10,4 +10,4 @@ Voidrealms: http://www.voidrealms.com/
 
 Voidrealms on YouTube: https://www.youtube.com/channel/UCYP0nk48grsMwO3iL8YaAKA
 
-by Bryan Cairns
+Voidrealms is maintained by Bryan Cairns
