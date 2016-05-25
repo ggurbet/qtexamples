@@ -1,5 +1,5 @@
 # qtexamples
-# by Gökhan Gurbetoğlu
+by Gökhan Gurbetoğlu
 
 This is a collection of code that I wrote when I was studying Voidrealms Qt C++
 tutorials.
