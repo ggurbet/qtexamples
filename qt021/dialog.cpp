@@ -9,6 +9,8 @@ Dialog::Dialog(QWidget *parent) :
 
     ui->treeWidget->setColumnCount(2);
     addRoot("root", "one");
+    addRoot("root", "two");
+    addRoot("root", "three");
 }
 
 Dialog::~Dialog()
@@ -21,7 +23,7 @@ void Dialog::addRoot(QString name, QString description)
     QTreeWidgetItem *itm = new QTreeWidgetItem(ui->treeWidget);
     itm->setText(0, name);
     itm->setText(1, description);
-    ui->treeWidget->addTopLevelItem(itm);
+//    ui->treeWidget->addTopLevelItem(itm);
     addChild(itm, "child", "one");
     addChild(itm, "child", "two");
 }
