@@ -19,6 +19,9 @@ public:
     void addRoot(QString name, QString description);
     void addChild(QTreeWidgetItem *parent, QString name, QString description);
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::Dialog *ui;
 };
