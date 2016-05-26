@@ -1,1 +1,3 @@
-<RCC/>
+<RCC>
+    <qresource prefix="/Images"/>
+</RCC>
