@@ -7,8 +7,8 @@ Dialog::Dialog(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    connect(ui->horizontalSlider, SIGNAL(valueChanged(int)), ui->progressBar, SLOT(setValue(int));
-
+    ui->progressBar->setValue(ui->horizontalSlider->value());
+    connect(ui->horizontalSlider, SIGNAL(valueChanged(int)), ui->progressBar, SLOT(setValue(int)));
 }
 
 Dialog::~Dialog()
