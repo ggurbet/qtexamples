@@ -12,3 +12,8 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_actionDo_Something_triggered()
+{
+    ui->statusBar->showMessage("Hello", 2000);
+}
