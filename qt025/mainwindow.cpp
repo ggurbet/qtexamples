@@ -11,7 +11,9 @@ MainWindow::MainWindow(QWidget *parent) :
     StatProgress = new QProgressBar(this);
 
     ui->statusBar->addPermanentWidget(StatLabel);
-    ui->statusBar->addPermanentWidget(StatProgress);
+    ui->statusBar->addPermanentWidget(StatProgress, 1);
+    StatProgress->setTextVisible(false);
+    StatLabel->setText("hello");
 }
 
 MainWindow::~MainWindow()
@@ -22,4 +24,5 @@ MainWindow::~MainWindow()
 void MainWindow::on_actionDo_Something_triggered()
 {
     ui->statusBar->showMessage("Hello");
+    StatProgress->setValue(45);
 }
