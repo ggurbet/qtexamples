@@ -6,6 +6,12 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    StatLabel = new QLabel(this);
+    StatProgress = new QProgressBar(this);
+
+    ui->statusBar->addPermanentWidget(StatLabel);
+    ui->statusBar->addPermanentWidget(StatProgress);
 }
 
 MainWindow::~MainWindow()
@@ -15,5 +21,5 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_actionDo_Something_triggered()
 {
-    ui->statusBar->showMessage("Hello", 2000);
+    ui->statusBar->showMessage("Hello");
 }

@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QLabel>
+#include <QProgressBar>
 
 namespace Ui {
     class MainWindow;
@@ -20,6 +22,8 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    QLabel *StatLabel;
+    QProgressBar *StatProgress;
 };
 
 #endif // MAINWINDOW_H
