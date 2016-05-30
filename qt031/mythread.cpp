@@ -5,3 +5,19 @@ MyThread::MyThread(QObject *parent) :
 {
 
 }
+
+void MyThread::run()
+{
+    for (unsigned int i = 0; i < 10000; i++)
+    {
+        QMutex mutex;
+        mutex.lock();
+        if (this->Stop)
+            break;
+        mutex.unlock();
+
+        emit NumberChanged(i);
+
+        this->msleep(100);
+    }
+}
