@@ -1,4 +1,5 @@
 #include "mytimer.h"
+#include <QDebug>
 
 MyTimer::MyTimer()
 {
@@ -10,5 +11,5 @@ MyTimer::MyTimer()
 
 void MyTimer::MySlot()
 {
-
+    qDebug() << "Timer executed";
 }
