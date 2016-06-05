@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 
 	List << 1 << 3 << 5;
 
-	foreach(int i, List)
+	foreach (int i, List)
 	{
 		qDebug() << i;
 	}
